@@ -3,24 +3,25 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&family=Rubik:wght@400;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Интернет-магазин электроники Device</title>
 </head>
 <body>
     <div class="center-container">
         <header class="main-header">
             <a class="header-logo">
-                <img class="logo-image" width="145" height="36" alt="Логотип интернет-магазина электронной техники Device">
+                <img class="logo-image" width="145" height="36" alt="Логотип интернет-магазина электронной техники Device" src="images/logo.svg">
             </a>
             <nav class="main-navigation">
                 <ul class="user-navigation">
                     <li class="user-navigation-item">
                         <form class="main-search" action="https://echo.htmlacademy.ru/" method="get">
-                            <input class="field" type="text" name="search-field" placeholder="Поиск по сайту" id="search-field">
+                            <input class="search-field" type="text" name="search-field" placeholder="Поиск по сайту" id="search-field">
                             <label class="visually-hidden" for="search-field">Поле ввода наименования товара.</label>
-                            <a class="button search-button" href="catalog.html">
-                                <span class="visually-hidden">Найти.</span>
-                            </a>                       
+                            <a class="button search-button" href="catalog.html">Найти</a>                       
                         </form>
                     </li>
                     <li class="user-navigation-item">
@@ -61,7 +62,7 @@
             <h1 class="visually-hidden">Главная страница интернет-магазина электроники Device.</h1>
             <section class="slider">
                 <h2 class="visually-hidden">Слайдер карточек товаров.</h2>
-                <img class="slider-image" src="images/quadrocopter.png" width="560" height="560" alt="Квадрокоптер">
+                <img class="slider-image" src="images/slider-1.png" width="560" height="560" alt="Квадрокоптер">
                 <button class="slider-button slider-prev">
                     <span class="visually-hidden">Предыдущее фото.</span>
                 </button>
@@ -105,43 +106,44 @@
                 <ul class="catalog-category-list">
                     <li class="catalog-category-item">
                         <a class="catalog-category-link" href="#">
-                            <img class="catalog-category-image" width="97" height="55" src="images/virtual-glasses.svg" alt="Очки виртуальной реальности.">
+                            <img class="catalog-category-image image-1" width="97" height="55" src="images/virtual-glasses.svg" alt="Очки виртуальной реальности.">
                             <h3 class="catalog-category-title">Виртуальная реальность</h3>
                         </a>
                     </li>
                     <li class="catalog-category-item">
                         <a class="catalog-category-link" href="#">
-                            <img class="catalog-category-image" width="87" height="117" src="images/monopod.svg" alt="Монопод.">
+                            <img class="catalog-category-image image-2" width="87" height="117" src="images/monopod.svg" alt="Монопод.">
                             <h3 class="catalog-category-title">Моноподы для селфи</h3>
                         </a>
                     </li>
                     <li class="catalog-category-item">
                         <a class="catalog-category-link" href="#">
-                             <img class="catalog-category-image" width="72" height="87" src="images/camera.svg" alt="Экшн-камера.">
+                             <img class="catalog-category-image image-3" width="72" height="87" src="images/camera.svg" alt="Экшн-камера.">
                             <h3 class="catalog-category-title">Экшн-камеры</h3> 
                         </a>
                     </li>
                     <li class="catalog-category-item">
                         <a class="catalog-category-link" href="#">
-                            <img class="catalog-category-image" width="108" height="66" src="images/fitnes-braslet.svg" alt="Фитнес-браслет.">
+                            <img class="catalog-category-image image-4" width="108" height="66" src="images/fitnes-braslet.svg" alt="Фитнес-браслет.">
                             <h3 class="catalog-category-title">Фитнес-браслеты</h3>
                         </a>
                     </li>
                     <li class="catalog-category-item">
                         <a class="catalog-category-link" href="#">
-                            <img class="catalog-category-image" width="57" height="98" src="images/clever-watch.svg" alt="Умные часы.">
+                            <img class="catalog-category-image image-5" width="57" height="98" src="images/clever-watch.svg" alt="Умные часы.">
                             <h3 class="catalog-category-title">Умные часы</h3>
                         </a>
                     </li>
                     <li class="catalog-category-item">
                         <a class="catalog-category-link" href="#">
-                            <img class="catalog-category-image" width="133" height="70" src="images/copter.svg" alt="Квадрокоптер.">
+                            <img class="catalog-category-image image-6" width="133" height="70" src="images/copter.svg" alt="Квадрокоптер.">
                             <h3 class="catalog-category-title">Квадрокоптеры</h3>
                         </a>
                     </li>
                 </ul>
             </section>
             <section class="delivery">
+                <div class="gray-color-wrapper">
                 <h2 class="second-level-title delivery-title">Доставка</h2>
                 <p class="delivery-paragraph">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
                 <ul class="services-list">
@@ -155,6 +157,7 @@
                         <button class="services-button" type="button">Кредит</button>
                     </li>
                 </ul>
+            </div>
                 <span class="delivery-offers">Доставим редкий товар под заказ</span>
             </section>
             <section class="about-company">
@@ -183,7 +186,7 @@
                 </div>
             </section>
             <section class="newsletter">
-                <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
+                <h2 class="second-level-title newsletter-title">Подпишитесь на рассылку</h2>
                 <p class="newsletter-paragraph">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
                 <form class="newsletter-form" action="https://echo.htmlacademy.ru" method="post">
                     <input class="field newsletter-form-field" type="email" name="newsletter-mail" id="newsletter-mail" placeholder="Ваш e-mail" required>
@@ -196,7 +199,7 @@
         <footer class="main-footer">
             <section class="footer-address">
                 <h2 class="visually-hidden">Адрес.</h2>
-                <img class="footer-logo" width="145" height="36" alt="Логотип интернет-магазина электронной техники Device">
+                <img class="footer-logo" width="145" height="36" alt="Логотип интернет-магазина электронной техники Device" src="images/footer-logo.svg">
                 <address class="footer-store-address">
                     <p class="footer-address-paragraph">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
                 </address>
@@ -235,7 +238,7 @@
             </section>
             <section class="footer-phone">
                 <h2 class="visually-hidden">Номер телефона.</h2>
-                <address class="footer-contact-phone">
+                <address class="footer-contact">
                     <a class="footer-contact-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
                 </address>
                 <svg class="html-academy-logo" width="115" height="33" fill="none" xmlns="http://www.w3.org/2000/svg">
