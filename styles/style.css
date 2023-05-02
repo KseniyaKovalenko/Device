@@ -4,6 +4,19 @@ body {
     line-height: 30px;
     color: #444444;
     background-color: #ffffff;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    height: 100%;
+}
+
+html {
+    height: 100%;
+}
+
+.main-container {
+    flex-grow: 1;
 }
 
 /* Header */
@@ -11,10 +24,20 @@ body {
 .main-header {
     color: #000000;
     background-color: #FFE17F;
+    width: 1160px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.logo-image {
+    margin-bottom: 30px;
 }
 
 .user-navigation {
     list-style-type: none;
+    display: flex;
+    margin: 0;
+    margin-bottom: 30px;
 }
 
 .search-field {
@@ -36,6 +59,8 @@ body {
 
 .products-navigation {
     list-style-type: none;
+    display: flex;
+    margin: 0;
 }
 
 .link {
@@ -64,6 +89,15 @@ body {
 
 /* Slider */
 
+.slider {
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.slider-container {
+    display: flex;
+}
+
 .slide-number {
     font-size: 180px;
     font-weight: 700;
@@ -90,6 +124,8 @@ body {
 
 .description-list {
     list-style-type: none;
+    display: flex;
+    margin-bottom: 26px;
 }
 
 .description-paragraph {
@@ -104,10 +140,29 @@ body {
     text-align: left;
 }
 
+.slider-pagination {
+    display: flex;
+    margin-bottom: 70px;
+}
+
 /* Section 1 - Catalog */
+
+.catalog-category {
+    width: 1160px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
 
 .catalog-category-list {
     list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.catalog-category-item {
+    width: 160px;
 }
 
 .catalog-category-link {
@@ -133,6 +188,13 @@ body {
 
 .gray-color-wrapper {
     background-color: #F0F0F0;
+    margin-bottom: 70px;
+}
+
+.delivery-center-wrapper {
+    display: flex;
+    width: 1160px;
+    margin: 0 auto;
 }
 
 .second-level-title {
@@ -146,10 +208,13 @@ body {
 
 .delivery-paragraph {
     text-align: left;
+    width: 452px;
 }
 
 .services-list {
     list-style-type: none;
+    order: -1;
+    margin-right: 116px;
 }
 
 .services-button {
@@ -175,9 +240,23 @@ body {
     color: #000000;
     letter-spacing: .2em;
     text-align: center;
+    background-color: #F0F0F0;
+    width: 1160px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+    display: block;
+    padding: 40px 125px;
+    box-sizing: border-box;
 }
 
 /* Section 3 - About company */
+
+.about-company {
+    width: 1160px;
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: 70px;
+}
 
 .about-company-paragraph {
     text-align: left;
@@ -228,8 +307,36 @@ body {
     background-color: #F0F0F0;
 }
 
+.newsletter-wrapper {
+    display: flex;
+    width: 1160px;
+    margin: 0 auto;
+    align-items: center;
+    padding-top: 64px;
+    margin-bottom: 164px;
+}
+
+.newsletter-title {
+    width: 348px;
+    margin: 0;
+    margin-right: 200px;
+}
+
 .newsletter-paragraph {
     text-align: left;
+    width: 560px;
+    margin: 0;
+}
+
+.form-wrapper {
+    display: flex;
+    width: 1158px;
+    margin: 0 auto;
+}
+
+.newsletter-form {
+    margin-right: 188px;
+    width: 810px;
 }
 
 .newsletter-form-field {
@@ -261,10 +368,26 @@ body {
     color: #ffffff;
 }
 
+.main-footer-wrapper {
+    width: 1160px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.footer-address {
+    width: 234px;
+    margin-right: 124px;
+}
+
 .footer-address-paragraph {
     font-size: 16px;
     line-height: 20px;
     font-style: normal;
+}
+
+.services-and-social {
+    width: 444px;
+    margin-right: 183px;
 }
 
 .footer-services-list {
@@ -274,12 +397,21 @@ body {
     line-height: 21px;
     letter-spacing: .2em;
     font-weight: 800;
+    display: flex;
 }
 
 .footer-services-link {
     text-decoration: none;
     color: #ffffff;
     text-transform: capitalize;
+}
+
+.footer-social-list {
+    display: flex;
+}
+
+.footer-phone {
+    width: 175px;
 }
 
 .footer-contact-phone {
