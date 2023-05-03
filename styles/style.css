@@ -56,7 +56,13 @@ html {
     width: 231px;
 }
 
-.user-navigation-wrapper {
+.user-wrapper {
+    width: 230px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.basket-wrapper {
     display: flex;
     width: 240px;
     flex-wrap: wrap;
