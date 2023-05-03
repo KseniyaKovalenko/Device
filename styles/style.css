@@ -29,8 +29,14 @@ html {
     margin-bottom: 30px;
 }
 
+.header-content-wrapper {
+    width: 1040px;
+    margin: 0 auto;
+}
+
 .logo-image {
     margin-bottom: 30px;
+    margin-left: auto;
 }
 
 .user-navigation {
@@ -38,6 +44,22 @@ html {
     display: flex;
     margin: 0;
     margin-bottom: 30px;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.search-form-item {
+    width: 517px;
+}
+
+.enter-item {
+    width: 231px;
+}
+
+.user-navigation-wrapper {
+    display: flex;
+    width: 240px;
+    flex-wrap: wrap;
 }
 
 .search-field {
@@ -57,10 +79,35 @@ html {
     text-align: center;
 }
 
-.products-navigation {
+.catalog-togler-wrapper {
+    display: flex;
+    width: 293px;
+}
+
+.catalog-togler-title {
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #000000;
+    letter-spacing: .2em;
+    margin: 0;
+}
+
+.catalog-services-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.services-navigation {
     list-style-type: none;
     display: flex;
     margin: 0;
+    width: 471px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
 }
 
 .link {
@@ -73,7 +120,7 @@ html {
     color: #000000;
 }
 
-.products-navigation-link {
+.services-navigation-link {
     letter-spacing: .2em;
     text-align: left;
 }

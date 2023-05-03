@@ -11,51 +11,54 @@
 </head>
 <body>
         <header class="main-header">
+            <div class="header-content-wrapper">
                 <a class="header-logo">
-                <img class="logo-image" width="145" height="36" alt="Логотип интернет-магазина электронной техники Device" src="images/logo.svg">
-            </a>
-            <nav class="main-navigation">
-                <ul class="user-navigation">
-                    <li class="user-navigation-item">
-                        <form class="main-search" action="https://echo.htmlacademy.ru/" method="get">
-                            <input class="search-field" type="text" name="search-field" placeholder="Поиск по сайту" id="search-field">
-                            <label class="visually-hidden" for="search-field">Поле ввода наименования товара.</label>
-                            <a class="search-button" href="catalog.html">Найти</a>                       
-                        </form>
-                    </li>
-                    <li class="user-navigation-item">
-                        <a class="link navigation-link" href="#">Войти</a>
-                    </li>
-                    <li class="user-navigation-item"> 
-                        <a class="link navigation-link" href="#">Сравнить</a>
-                    </li>
-                    <li class="user-navigation-item">
-                        <a class="link navigation-link" href="#">
-                            Корзина
-                            <span class="basket-amount">2</span>
-                        </a>
-                    </li>
-                </ul>
-                <ul class="products-navigation">               
-                    <li class="products-navigation-item">
-                        <a class="link products-navigation-link">Каталог товаров</a>
-                     </li>
-                     <li class="products-navigation-item">
-                        <button class="products-navigation-button visually-hidden" type="button">
-                            <span class="visually-hidden">Развернуть список товаров.</span>
-                        </button>
-                    </li>
-                    <li class="products-navigation-item">
-                        <a class="link products-navigation-link" href="#">Доставка</a>
-                    </li>
-                    <li class="products-navigation-item">
-                        <a class="link products-navigation-link" href="#">Гарантия</a>
-                    </li>
-                    <li class="products-navigation-item">
-                        <a class="link products-navigation-link" href="#">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
+                    <img class="logo-image" width="145" height="36" alt="Логотип интернет-магазина электронной техники Device" src="images/logo.svg">
+                </a>
+                <nav class="main-navigation">               
+                    <ul class="user-navigation">                   
+                        <li class="user-navigation-item search-form-item">                        
+                            <form class="main-search" action="https://echo.htmlacademy.ru/" method="get">                           
+                                <input class="search-field" type="text" name="search-field" placeholder="Поиск по сайту" id="search-field">                           
+                                <label class="visually-hidden" for="search-field">Поле ввода наименования товара.</label>                  
+                                <a class="search-button" href="catalog.html">Найти</a>                                              
+                            </form>                   
+                        </li>               
+                        <li class="user-navigation-item enter-item">                    
+                            <a class="link navigation-link" href="#">Войти</a>                   
+                        </li>
+                        <div class="user-navigation-wrapper">                
+                        <li class="user-navigation-item">                        
+                            <a class="link navigation-link" href="#">Сравнить</a>                  
+                        </li>                  
+                        <li class="user-navigation-item">                       
+                            <a class="link navigation-link" href="#">Корзина                          
+                                <span class="basket-amount">2</span>                                             
+                            </a>                    
+                        </li>
+                    </div>  
+                    </ul>
+                    <div class="catalog-services-wrapper">
+                        <div class="catalog-togler-wrapper">  
+                            <h2 class="catalog-togler-title">Каталог товаров</h2>
+                            <button class="products-navigation-button visually-hidden" type="button">
+                                <span class="visually-hidden">Развернуть список товаров.</span>
+                            </button>
+                        </div>
+                        <ul class="services-navigation">  
+                            <li class="services-navigation-item">
+                                <a class="link services-navigation-link" href="#">Доставка</a>
+                            </li>
+                            <li class="services-navigation-item">
+                                <a class="link services-navigation-link" href="#">Гарантия</a>
+                            </li>
+                            <li class="services-navigation-item">
+                                <a class="link services-navigation-link" href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
         </header>
         <main class="main-index main-container">
             <h1 class="visually-hidden">Главная страница интернет-магазина электроники Device.</h1>
