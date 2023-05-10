@@ -161,6 +161,18 @@ body {
     display: flex;
 }
 
+.slider-image-wrapper {
+    display: flex;
+}
+
+.slider-prev {
+    order: -1;
+}
+
+.slider-next {
+    order: 2;
+}
+
 .slide-number {
     font-size: 180px;
     font-weight: 700;
