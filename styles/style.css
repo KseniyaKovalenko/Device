@@ -1,3 +1,7 @@
+html {
+    height: 100%;
+}
+
 body {
     font-family: "Rubic", sans-serif;
     font-size: 18px;
@@ -13,9 +17,16 @@ body {
     padding-top: 40px;
 }
 
-html {
-    height: 100%;
-}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 
 .main-container {
     flex-grow: 1;
@@ -28,13 +39,13 @@ html {
     background-color: #FFE17F;
     width: 1160px;
     margin: 0 auto;
-}
-
-.slider-header {
+    padding-left: 60px;
+    padding-right: 60px;
     padding-bottom: 150px;
 }
 
 .catalog-header {
+    padding-bottom: 0;
     margin-bottom: 35px;
 }
 
@@ -51,6 +62,7 @@ html {
 .user-navigation {
     list-style-type: none;
     display: flex;
+    flex-wrap: wrap;
     margin: 0;
     margin-bottom: 30px;
     padding: 0;
@@ -63,18 +75,6 @@ html {
 
 .enter-item {
     width: 231px;
-}
-
-.user-wrapper {
-    width: 230px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.basket-wrapper {
-    display: flex;
-    width: 240px;
-    flex-wrap: wrap;
 }
 
 .search-field {
@@ -118,6 +118,7 @@ html {
 .services-navigation {
     list-style-type: none;
     display: flex;
+    flex-wrap: wrap;
     margin: 0;
     width: 471px;
     justify-content: space-between;
@@ -206,6 +207,8 @@ html {
 
 .slider-pagination {
     display: flex;
+    margin: 0;
+    padding: 0;
     margin-bottom: 70px;
 }
 
@@ -235,7 +238,45 @@ html {
 
 .catalog-category-image {
     background-color: #FFE17F;
-    display: block;
+    width: 160px;
+    height: 160px;
+    margin-bottom: 33px;
+}
+
+.image-1 {
+    background-image: url(../images/virtual-glasses.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.image-2 {
+    background-image: url(../images/monopod.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.image-3 {
+    background-image: url(../images/camera.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.image-4 {
+    background-image: url(../images/fitnes-braslet.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.image-5 {
+    background-image: url(../images/clever-watch.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.image-6 {
+    background-image: url(../images/copter.svg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .catalog-category-title {
@@ -246,6 +287,8 @@ html {
     color: #000000;
     letter-spacing: -0.02em;
     text-align: left;
+    margin: 0;
+    margin-bottom: 134px;
 }
 
 /* Section 2 - Delivery */
@@ -253,6 +296,7 @@ html {
 .gray-color-wrapper {
     background-color: #F0F0F0;
     margin-bottom: 70px;
+    padding-bottom: 137px;
 }
 
 .delivery-center-wrapper {
@@ -268,11 +312,17 @@ html {
     font-weight: 800;
     color: #000000;
     text-align: left;
+    margin: 0;
+}
+
+.delivery-title {
+    margin-bottom: 34px;
 }
 
 .delivery-paragraph {
     text-align: left;
     width: 452px;
+    margin: 0;
 }
 
 .services-list {
@@ -281,6 +331,10 @@ html {
     margin: 0;
     padding: 0;
     margin-right: 116px;
+}
+
+.services-item:not(:last-child) {
+    margin-bottom: 35px;
 }
 
 .services-button {
@@ -309,7 +363,7 @@ html {
     background-color: #F0F0F0;
     width: 1160px;
     margin: 0 auto;
-    margin-bottom: 70px;
+    margin-bottom: 117px;
     display: block;
     padding: 40px 125px;
     box-sizing: border-box;
@@ -324,8 +378,14 @@ html {
     margin-bottom: 70px;
 }
 
+.about-company-title {
+    margin-bottom: 48px;
+}
+
 .about-company-paragraph {
     text-align: left;
+    margin: 0;
+    margin-bottom: 30px;
 }
 
 .logistic-company-list {
@@ -338,31 +398,60 @@ html {
     letter-spacing: -0.02em;
     margin: 0;
     padding: 0;
+    margin-bottom: 40px;
+}
+
+.logistic-company-item:not(:last-child) {
+    margin-bottom: 19px;
 }
 
 .about-company-link {
     letter-spacing: .2em;
 }
 
+.company-contacts-title {
+    margin-bottom: 48px;
+}
+
+.company-contacts-paragraph {
+    margin: 0;
+    margin-bottom: 30px;
+}
+
 .store-address-title {
     font-weight: 700;
     font-size: 24px;
     line-height: 30px;
+    margin: 0;
+    margin-bottom: 15px;
 }
 
 .store-address {
     font-style: normal;
     color: #444444;
+    margin-bottom: 30px;
+}
+
+.address-paragraph {
+    margin: 0;
 }
 
 .contact-phone {
     text-decoration: none;
+    color: #444444;
 }
 
 .working-time-title {
     font-weight: 700;
     font-size: 24px;
     line-height: 30px;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.working-time-paragraph {
+    margin: 0;
+    margin-bottom: 30px;
 }
 
 .mail-link {
