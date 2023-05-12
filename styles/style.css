@@ -108,6 +108,7 @@ body {
     color: #000000;
     letter-spacing: .2em;
     margin: 0;
+    padding: 17px 7px 17px 2px;
 }
 
 .catalog-services-wrapper {
@@ -139,6 +140,8 @@ body {
 .services-navigation-link {
     letter-spacing: .2em;
     text-align: left;
+    padding: 2px;
+    display: block;
 }
 
 .navigation-link {
@@ -148,6 +151,8 @@ body {
     text-transform: capitalize;
     text-align: left;
     font-weight: 400;
+    display:block;
+    padding: 4px;
 }
 
 /* Slider */
@@ -535,12 +540,17 @@ body {
 .main-footer {
     background-color: #444444;
     color: #ffffff;
+    padding: 62px 140px;
 }
 
 .main-footer-wrapper {
     width: 1160px;
     display: flex;
     margin: 0 auto;
+}
+
+.footer-logo {
+    margin-bottom: 35px;
 }
 
 .footer-address {
@@ -552,6 +562,8 @@ body {
     font-size: 16px;
     line-height: 20px;
     font-style: normal;
+    margin: 0;
+    margin-bottom: 64px;
 }
 
 .services-and-social {
@@ -569,6 +581,9 @@ body {
     display: flex;
     margin: 0;
     padding: 0;
+    justify-content: space-between;
+    margin-bottom: 62px;
+    padding-top: 75px;
 }
 
 .footer-services-link {
@@ -579,13 +594,28 @@ body {
 
 .footer-social-list {
     display: flex;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     list-style-type: none;
+    width: 150px;
+    justify-content: space-between;
+}
+
+.footer-social-item {
+    width: 40px;
+    height: 40px;
 }
 
 .social-link {
     text-decoration: none;
+}
+
+.footer-contact {
+    padding-top: 78px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400px;
+    margin-bottom: 63px;
 }
 
 .footer-phone {
@@ -593,7 +623,6 @@ body {
 }
 
 .footer-contact-phone {
-    text-decoration: none;
     color: #ffffff;
     font-style: normal;
 }
